@@ -1,0 +1,90 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f9;
+  margin: 0;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+#open-dialog-btn {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Mengatur Layout Grid untuk Card Buku */
+#library-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.book-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.book-card h3 {
+  margin-top: 0;
+  color: #1e293b;
+}
+
+button {
+  cursor: pointer;
+  margin-top: 10px;
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+}
+
+.status-btn.read { background-color: #86efac; color: #166534; }
+.status-btn.not-read { background-color: #fca5a5; color: #991b1b; }
+.remove-btn { background-color: #e2e8f0; color: #475569; }
+.remove-btn:hover { background-color: #cbd5e1; }
+
+/* Styling Dialog / Modal */
+dialog {
+  border: none;
+  border-radius: 8px;
+  padding: 25px;
+  width: 350px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.checkbox {
+  flex-direction: row;
+  gap: 10px;
+}
+
+.form-group input[type="text"], .form-group input[type="number"] {
+  padding: 8px;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
