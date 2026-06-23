@@ -31,8 +31,8 @@ function displayBooks() {
  
     bookCard.innerHTML = `
       <h3>"${book.title}"</h3>
-      <p>Oleh: ${book.author}</p>
-      <p>${book.pages} Halaman</p>
+      <p>By: ${book.author}</p>
+      <p>${book.pages} Pages</p>
       <button class="status-btn ${book.isRead ? 'read' : 'not-read'}">
         ${book.isRead ? 'Read' : 'Not Read'}
       </button>
